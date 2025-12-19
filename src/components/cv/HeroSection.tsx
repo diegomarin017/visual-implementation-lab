@@ -1,77 +1,80 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { XCircle, CheckCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20 px-4">
-      {/* Background gradient */}
-      <div 
-        className="absolute inset-0 opacity-50"
-        style={{ background: "var(--gradient-hero)" }}
-      />
-      
-      {/* Floating orbs */}
-      <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl animate-float delay-300" />
-      
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
-        {/* Profile image */}
-        <div className="mb-8 flex justify-center">
+    <section className="pt-32 pb-16 px-4">
+      <div className="max-w-5xl mx-auto">
+        {/* Profile Photo */}
+        <div className="flex justify-center mb-12">
           <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl animate-pulse-glow" />
-            <img
-              src="https://media.licdn.com/dms/image/v2/D4D03AQEBhUkIRkWvIg/profile-displayphoto-shrink_400_400/B4DZk.uuwTHsAg-/0/1757694062251?e=1767830400&v=beta&t=dCY0C5XOs0NV1P9GEKiShIXBIL-MYHENPEZhwT6DEJ4"
-              alt="Diego Marín Falcón"
-              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-primary/50 shadow-lg"
-            />
+            <div className="w-36 h-36 md:w-44 md:h-44 rounded-full border-2 border-muted-foreground/30 overflow-hidden bg-muted">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQEBhUkIRkWvIg/profile-displayphoto-shrink_400_400/B4DZk.uuwTHsAg-/0/1757694062251?e=1767830400&v=beta&t=dCY0C5XOs0NV1P9GEKiShIXBIL-MYHENPEZhwT6DEJ4"
+                alt="Diego Marín Falcón"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Name and title */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-4 opacity-0 animate-fade-in-up">
-          Diego Marín Falcón
-        </h1>
-        
-        <p className="text-xl md:text-2xl text-muted-foreground mb-2 opacity-0 animate-fade-in-up delay-100">
-          Especialista en
-        </p>
-        
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-semibold gradient-text mb-8 opacity-0 animate-fade-in-up delay-200">
-          Implementación de IA
-        </h2>
-        
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up delay-300">
-          Análisis de Procesos · Desbloqueo de Proyectos · Ahorro de Tiempo
-        </p>
-
-        {/* Contact info */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 opacity-0 animate-fade-in-up delay-400">
-          <a 
-            href="mailto:diegomarinfalcon@gmail.com" 
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border/50 hover:border-primary/50 hover:bg-secondary transition-all duration-300"
-          >
-            <Mail className="w-4 h-4 text-primary" />
-            <span className="text-sm">diegomarinfalcon@gmail.com</span>
-          </a>
-          
-          <a 
-            href="tel:+34668633533" 
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border/50 hover:border-primary/50 hover:bg-secondary transition-all duration-300"
-          >
-            <Phone className="w-4 h-4 text-primary" />
-            <span className="text-sm">+34 668 633 533</span>
-          </a>
-          
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border/50">
-            <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-sm">20 años</span>
-          </div>
+        {/* Headline */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight mb-6">
+            No necesitas más código.
+            <br />
+            Necesitas <span className="text-primary">mejores procesos.</span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Ayudo a empresas sin departamento de IA a analizar su caos interno,
+            detectar ineficiencias y aplicar soluciones tecnológicas prácticas para
+            desbloquear proyectos.
+          </p>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in-up delay-500">
-          <div className="flex flex-col items-center gap-2 text-muted-foreground">
-            <span className="text-xs uppercase tracking-widest">Scroll</span>
-            <div className="w-px h-8 bg-gradient-to-b from-primary to-transparent" />
+        {/* Comparison Cards */}
+        <div className="grid md:grid-cols-2 gap-4 mt-12 max-w-4xl mx-auto">
+          {/* Situación Actual */}
+          <div className="p-6 rounded-xl bg-secondary/30 border border-border/50">
+            <div className="flex items-center gap-3 mb-4">
+              <XCircle className="w-5 h-5 text-destructive" />
+              <h3 className="font-display font-semibold text-destructive">Situación Actual</h3>
+            </div>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-muted-foreground">•</span>
+                <span>Tareas repetitivas que queman al equipo.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-muted-foreground">•</span>
+                <span>Procesos manuales sin documentar.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-muted-foreground">•</span>
+                <span>"Queremos usar IA pero no sabemos cómo".</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Mi Aportación */}
+          <div className="p-6 rounded-xl bg-primary/5 border border-primary/30">
+            <div className="flex items-center gap-3 mb-4">
+              <CheckCircle className="w-5 h-5 text-primary" />
+              <h3 className="font-display font-semibold text-primary">Mi Aportación</h3>
+            </div>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-primary">•</span>
+                <span>Análisis y detección de cuellos de botella.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary">•</span>
+                <span>Implementación de IA de bajo coste y alto impacto.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary">•</span>
+                <span>Ejecución inmediata y desbloqueo operativo.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
