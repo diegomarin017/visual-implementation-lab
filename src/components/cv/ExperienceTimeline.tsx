@@ -18,7 +18,7 @@ const experiences: ExperienceItem[] = [
   {
     id: "ia",
     icon: Brain,
-    iconColor: "text-primary",
+    iconColor: "text-cyan-400",
     iconBg: "bg-cyan-500/20",
     title: "Inteligencia Artificial – Uso Práctico",
     subtitle: "Formación & Aplicación Real",
@@ -34,7 +34,7 @@ const experiences: ExperienceItem[] = [
   {
     id: "leinn",
     icon: Users,
-    iconColor: "text-blue-400",
+    iconColor: "text-indigo-400",
     iconBg: "bg-indigo-500/20",
     title: "LEINN – Liderazgo e Innovación",
     subtitle: "Emprendedor de Proyectos Reales",
@@ -50,8 +50,8 @@ const experiences: ExperienceItem[] = [
   {
     id: "robotics",
     icon: Cpu,
-    iconColor: "text-primary",
-    iconBg: "bg-primary/20",
+    iconColor: "text-emerald-400",
+    iconBg: "bg-emerald-500/20",
     title: "Competiciones de Robótica (FLL & WRO)",
     subtitle: "Competidor Internacional",
     period: "Trayectoria",
@@ -66,8 +66,8 @@ const experiences: ExperienceItem[] = [
   {
     id: "tudetic",
     icon: ShoppingCart,
-    iconColor: "text-primary",
-    iconBg: "bg-emerald-500/20",
+    iconColor: "text-orange-400",
+    iconBg: "bg-orange-500/20",
     title: "Tudetic (Empresa de venta online)",
     subtitle: "IA Aplicada",
     period: "Experiencia laboral",
@@ -80,8 +80,8 @@ const experiences: ExperienceItem[] = [
   {
     id: "telepizza",
     icon: Clock,
-    iconColor: "text-accent",
-    iconBg: "bg-orange-500/20",
+    iconColor: "text-red-400",
+    iconBg: "bg-red-500/20",
     title: "Telepizza",
     subtitle: "Repartidor / Operativo",
     period: "Experiencia Laboral",
