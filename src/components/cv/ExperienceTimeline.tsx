@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, Brain, Users, Cpu, Clock, Briefcase } from "lucide-react";
+import { ChevronDown, ChevronUp, Brain, Users, Cpu, Clock, Briefcase, ShoppingCart } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface ExperienceItem {
@@ -19,7 +19,7 @@ const experiences: ExperienceItem[] = [
     id: "ia",
     icon: Brain,
     iconColor: "text-primary",
-    iconBg: "bg-primary/20",
+    iconBg: "bg-cyan-500/20",
     title: "Inteligencia Artificial – Uso Práctico",
     subtitle: "Formación & Aplicación Real",
     period: "En curso",
@@ -35,7 +35,7 @@ const experiences: ExperienceItem[] = [
     id: "leinn",
     icon: Users,
     iconColor: "text-blue-400",
-    iconBg: "bg-blue-500/20",
+    iconBg: "bg-indigo-500/20",
     title: "LEINN – Liderazgo e Innovación",
     subtitle: "Emprendedor de Proyectos Reales",
     period: "2 Años",
@@ -65,9 +65,9 @@ const experiences: ExperienceItem[] = [
   },
   {
     id: "tudetic",
-    icon: Brain,
+    icon: ShoppingCart,
     iconColor: "text-primary",
-    iconBg: "bg-primary/20",
+    iconBg: "bg-emerald-500/20",
     title: "Tudetic (Empresa de venta online)",
     subtitle: "IA Aplicada",
     period: "Experiencia laboral",
@@ -81,7 +81,7 @@ const experiences: ExperienceItem[] = [
     id: "telepizza",
     icon: Clock,
     iconColor: "text-accent",
-    iconBg: "bg-accent/20",
+    iconBg: "bg-orange-500/20",
     title: "Telepizza",
     subtitle: "Repartidor / Operativo",
     period: "Experiencia Laboral",
