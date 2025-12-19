@@ -64,6 +64,20 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
+    id: "tudetic",
+    icon: Cpu,
+    iconColor: "text-primary",
+    iconBg: "bg-primary/20",
+    title: "Tudetic (Empresa de venta online)",
+    subtitle: "IA Aplicada",
+    period: "Proyecto",
+    quote: "Automatización real con resultados medibles.",
+    highlights: [
+      "Modificación de imágenes en bloque automáticamente con Python.",
+      "Categorización de productos automática con IA.",
+    ],
+  },
+  {
     id: "telepizza",
     icon: Clock,
     iconColor: "text-accent",
@@ -73,8 +87,8 @@ const experiences: ExperienceItem[] = [
     period: "Experiencia Laboral",
     quote: "Eficiencia operativa y cumplimiento de objetivos.",
     highlights: [
-      "Gestión de tiempos en entornos de alta presión.",
-      "Responsabilidad operativa y cumplimiento de KPIs diarios.",
+      "Saber aguantar la presión en momentos de alta presión.",
+      "Cumplimiento de objetivos diarios y responsabilidad.",
     ],
   },
 ];
